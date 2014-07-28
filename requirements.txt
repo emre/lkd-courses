@@ -1,0 +1,4 @@
+django
+db-sqlite3
+south
+pillow
