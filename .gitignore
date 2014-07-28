@@ -54,3 +54,4 @@ docs/_build/
 
 .idea
 local_settings.py
+*.sqlite3
