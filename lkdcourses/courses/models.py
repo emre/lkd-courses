@@ -72,8 +72,8 @@ class Event(models.Model):
 
 
 SPONSOR_TYPES = (
-    ('1', 'altın'),
-    ('2', 'platin'),
+    ('1', 'platin'),
+    ('2', 'altın'),
     ('4', 'gümüş'),
     ('5', 'bronz'),
 )
