@@ -181,6 +181,7 @@ class UserProfile(models.Model):
         help_text="Kamu çalışanları bağlı oldukları müdürlüğü yazabilir.",
         max_length=255
     )
+    public_officer = models.BooleanField("Kamu çalışanı", default=False)
     role = models.CharField("Bağlı olunan departman/bölüm", blank=True, null=True, max_length=255)
     birthdate = models.DateField("Doğum tarihi")
     lkd_id = models.CharField("LKD üye numarası", blank=True, null=True, max_length=32)
