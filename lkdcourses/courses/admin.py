@@ -4,7 +4,8 @@ from .models import *
 
 
 class CourseAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {'slug':('name',),}
+    filter_horizontal = ('instructors',)
 
 
 class InstructorAdmin(admin.ModelAdmin):
