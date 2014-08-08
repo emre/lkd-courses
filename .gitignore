@@ -56,7 +56,7 @@ docs/_build/
 local_settings.py
 *.sqlite3
 
-media/*
+media/event_cover_images/*
 static/*
 
 *.sqlite3
