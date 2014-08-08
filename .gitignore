@@ -58,3 +58,5 @@ local_settings.py
 
 media/*
 static/*
+
+*.sqlite3
