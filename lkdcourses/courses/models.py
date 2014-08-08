@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 class Instructor(models.Model):
     fullname = models.CharField("ad soyad", max_length=255)
-    avatar = models.ImageField(upload_to="instructor_avatars")
+    avatar = models.ImageField(upload_to="instructor_avatars", blank=True, null=True)
 
     def __unicode__(self):
         return smart_unicode(self.fullname)
