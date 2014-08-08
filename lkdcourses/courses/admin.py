@@ -6,18 +6,22 @@ from .models import *
 class CourseAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('name',),}
     filter_horizontal = ('instructors',)
+    search_fields = ['name']
+    list_display = ('name', 'event', 'start_date', 'end_date', 'deadline_date', 'quota')
 
 
 class InstructorAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ['name']
 
 
 class VenueAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ('name', )
+    list_display = ('name', 'latitude', 'longitude')
 
 
 class EventAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ['name']
+    list_display = ('name', 'start_date', 'end_date', 'venue')
 
 
 class ApplicationAdmin(admin.ModelAdmin):
