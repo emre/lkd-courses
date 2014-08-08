@@ -1,0 +1,329 @@
+[
+{
+    "pk": 2, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Adil \u0130lhan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 3, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Ahmet S\u0131nak", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 4, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Ayd\u0131n T. Doyak", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 5, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "\u00c7a\u011fda\u015f Direk", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 6, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "D. Destan Sarpkaya", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 7, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Emre Ery\u0131lmaz", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 8, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Eray Aslan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 9, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Fatih Erikli", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 10, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Hakan Uygun", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 11, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Hidayet Do\u011fan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 12, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Levent Emmungil", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 13, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "H. Murat Y\u0131ld\u0131r\u0131m", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 14, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Onur R. Bing\u00f6l", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 15, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "\u00d6mer \u00d6zkan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 16, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Samed Beyribey", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 17, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Tayfun \u00d6zi\u015f Erikan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 18, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Ali Burak \u00d6nc\u00fcl", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 19, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Bark\u0131n K\u0131l\u0131\u00e7", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 20, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "\u00c7a\u011fr\u0131 Ersen", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 21, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Doruk Fi\u015fek", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 22, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "R. Eng\u00fcr Pi\u015firici", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 23, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Erdem Bayer", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 24, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Fatih N. Yarc\u0131", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 25, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Halit Alptekin", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 26, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "H. Kemal Ta\u015fk\u0131n", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 27, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Mehmet Dursun \u0130nce", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 28, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Mustafa Akg\u00fcl", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 29, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "Osman \u00dcnalan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 30, 
+    "model": "courses.instructor", 
+    "fields": {
+        "fullname": "S\u00fcleyman \u00d6zarslan", 
+        "avatar": ""
+    }
+},
+{
+    "pk": 1, 
+    "model": "courses.venue", 
+    "fields": {
+        "name": "Abant \u0130zzet Baysal \u00dcniversitesi", 
+        "longitude": "31.508", 
+        "latitude": "40.713", 
+        "address": "Abant \u0130zzet Baysal \u00dcniversitesi G\u00f6lk\u00f6y Kamp\u00fcs\u00fc 14280 BOLU\r\n\r\nTel: 0 374 2541000\r\nFaks: 0 374 2534506\r\nE-posta: bilgi@ibu.edu.tr", 
+        "directions": "Kamp\u00fcs i\u00e7i ring servis\r\n\r\n\u00dcniversitemizin \u0130zzet Baysal Kampus alan\u0131 i\u00e7inde 23 May\u0131s 2011 pazartesi g\u00fcn\u00fcnden itibaren Bolu Belediyesi otob\u00fcsleri ile ring servis uygulamas\u0131 ba\u015flat\u0131lm\u0131\u015ft\u0131r.\r\n\r\nRing servis; Merkez \u00f6\u011frenci dura\u011f\u0131ndan her yar\u0131m saatte bir kalkacak, \u015fehre giden yolu takip edip Karak\u00f6y kav\u015fa\u011f\u0131ndan d\u00f6nerek \u00fcniversite istikametinde devam edecektir.\r\n\r\nRing servis, haftan\u0131n 7 g\u00fcn\u00fc sabah saat 08.15 de ba\u015flay\u0131p ak\u015fam 20.15 de sona erecektir.\r\n\r\nServis \u00fccreti 25 kuru\u015ftur.\r\n\r\nServis g\u00fczerg\u00e2h\u0131 ve duraklar\u0131: \r\nMerkez \u00d6\u011frenci Dura\u011f\u0131-M\u00fchendislik Mimarl\u0131k Fak\u00fcltesi Dura\u011f\u0131-Rekt\u00f6rl\u00fck Dura\u011f\u0131-T\u0131p Fak\u00fcltesi Dura\u011f\u0131-Sa\u011fl\u0131k Y\u00fcksekokulu Dura\u011f\u0131-Y\u00fczme Havuzu Dura\u011f\u0131-Karak\u00f6y Dura\u011f\u0131-Y\u00fczme Havuzu Dura\u011f\u0131-Sa\u011fl\u0131k Y\u00fcksekokulu Dura\u011f\u0131-T\u0131p Fak\u00fcltesi Dura\u011f\u0131- Rekt\u00f6rl\u00fck Dura\u011f\u0131-BESYO Dura\u011f\u0131-\u00d6\u011frenci Yemekhanesi Dura\u011f\u0131-Kredi ve Yurtlar Kurumu Dura\u011f\u0131- Merkez \u00d6\u011frenci Dura\u011f\u0131.\r\n\r\n\u015eehir i\u00e7i ula\u015f\u0131m\r\n\u015eehir i\u00e7inde ula\u015f\u0131m belediye otob\u00fcsleri ile sa\u011flanmaktad\u0131r. \u015eehir merkezinden kamp\u00fcse ula\u015f\u0131m S.S.Bolu Karak\u00f6y Otob\u00fcs-Minib\u00fcs Motorlu Ta\u015f\u0131y\u0131c\u0131lar Kooperatifi'ne ait midib\u00fcsler ve Bolu Belediyesi'ne ait otob\u00fcsler ile sa\u011flanmaktad\u0131r. \u015eehir merkezi ile Merkez Yerle\u015fke aras\u0131ndaki mesafe 12 km. dir ve bu mesafedeki yolculuk 25 dakika s\u00fcrmektedir.Haftan\u0131n her g\u00fcn\u00fc 30 dakikada bir saat 23.00\u2019 e kadar ara\u00e7 bulunmaktad\u0131r.\r\n\r\nKarak\u00f6y Koop. ileti\u015fim i\u00e7in telefon : (374) 2159501\r\n\r\n\u015eehirler aras\u0131 ula\u015f\u0131m\r\nMetro Turizm\r\nweb sayfas\u0131 : http://www.metroturizm.com.tr/ tel: (0374) 218 05 55\r\n\r\n\u00dcst\u00fcn Er\u00e7elik\r\nweb sayfas\u0131 : http://www.ustunercelik.com.tr/ tel: (0374) 213 20 18\r\n\r\nD\u00fczce G\u00fcven\r\nweb sayfas\u0131 : http://www.duzceguven.com.tr/ tel:(0374) 215 34 10\r\n\r\nSakarya V\u0130B\r\nweb sayfas\u0131 : http://www.sakaryavib.com.tr/ tel: (0374) 212 35 00\r\n", 
+        "accommodation": "Konaklama \u00fccreti ne kadard\u0131r? Yeri neresidir?\r\n\r\nKonaklama \u00fccreti ki\u015fi ba\u015f\u0131 g\u00fcnl\u00fck 10 TL\u2019dir. Kat\u0131l\u0131mc\u0131lar KYK yurtlar\u0131nda konaklayacaklard\u0131r. Kad\u0131n yurtlar\u0131 kamp\u00fcs i\u00e7inde, e\u011fitim yerine y\u00fcr\u00fcy\u00fc\u015f uzakl\u0131\u011f\u0131ndad\u0131r. Erkek yurtlar\u0131 \u015fehirdedir. Erkek yurtlar\u0131 ile e\u011fitim yeri aras\u0131nda sabah e\u011fitim ba\u015flang\u0131c\u0131ndan \u00f6nce, ak\u015fam da e\u011fitim bitiminden sonra kampa \u00f6zel servis ile ula\u015f\u0131m sa\u011flanacakt\u0131r. \u00d6zel servis \u00fccreti tek y\u00f6n i\u00e7in 1.25 TL\u2019dir."
+    }
+},
+{
+    "pk": 1, 
+    "model": "courses.event", 
+    "fields": {
+        "allowed_course_count": 2, 
+        "name": "LKD Yaz Kamp\u0131", 
+        "end_date": "2014-08-08", 
+        "faq": "E\u011fitime kat\u0131l\u0131m \u00fccreti nedir?\r\nE\u011fitime kat\u0131l\u0131m \u00fccretsizdir. Ancak kat\u0131l\u0131mc\u0131lar\u0131n kendi masraflar\u0131n\u0131 (yol, konaklama, yemek) kar\u015f\u0131lamalar\u0131 beklenmektedir.\r\nKampa ba\u015fvurmak i\u00e7in \u00f6n ko\u015fullar nelerdir?\r\nHer bir e\u011fitimin kendi sayfas\u0131nda kat\u0131l\u0131mc\u0131lardan beklenen ko\u015fullar\u0131 g\u00f6rebilirsiniz.\r\nE\u011fitimlerin i\u00e7eri\u011fi nedir?\r\nHer bir e\u011fitimin kendi sayfas\u0131nda e\u011fitim detaylar\u0131n\u0131 g\u00f6rebilirsiniz.\r\nAyn\u0131 anda birden fazla e\u011fitime ba\u015fvurabilir miyim?\r\nHay\u0131r. E\u011fitimler e\u015fzamanl\u0131 ger\u00e7ekle\u015ftirildi\u011finden, ayn\u0131 anda iki e\u011fitime birden kat\u0131lman\u0131z m\u00fcmk\u00fcn de\u011fil.\r\nE\u011fitimlerin ba\u015flang\u0131\u00e7 ve biti\u015f saatleri nedir?\r\nKampta e\u011fitimler haftasonu dahil sabahtan ak\u015fama kadar s\u00fcrmekte ve ak\u015fam et\u00fct saatleri de olmaktad\u0131r. 12 g\u00fcnl\u00fck e\u011fitim s\u0131ras\u0131nda, haftai\u00e7i bir g\u00fcn ara verilmesi planlanmaktad\u0131r. Et\u00fct saatlerine kat\u0131l\u0131m zorunlu olmamakla beraber, e\u011fitmenin tercihine g\u00f6re et\u00fct s\u0131ras\u0131nda konu i\u015flenmesi de m\u00fcmk\u00fcnd\u00fcr. O nedenle t\u00fcm kat\u0131l\u0131mc\u0131lara \u00fcniversite i\u00e7inde konaklamalar\u0131n\u0131 \u00f6neriyoruz.\r\nKonaklama \u00fccreti ne kadard\u0131r? Yeri neresidir?\r\nKonaklama \u00fccreti ki\u015fi ba\u015f\u0131 g\u00fcnl\u00fck 10 TL\u2019dir. Kat\u0131l\u0131mc\u0131lar KYK yurtlar\u0131nda konaklayacaklard\u0131r. Kad\u0131n yurtlar\u0131 kamp\u00fcs i\u00e7inde, e\u011fitim yerine y\u00fcr\u00fcy\u00fc\u015f uzakl\u0131\u011f\u0131ndad\u0131r. Erkek yurtlar\u0131 \u015fehirdedir. Erkek yurtlar\u0131 ile e\u011fitim yeri aras\u0131nda sabah e\u011fitim ba\u015flang\u0131c\u0131ndan \u00f6nce, ak\u015fam da e\u011fitim bitiminden sonra kampa \u00f6zel servis ile ula\u015f\u0131m sa\u011flanacakt\u0131r. \u00d6zel servis \u00fccreti tek y\u00f6n i\u00e7in 1.25 TL\u2019dir.\r\nBa\u015fka bir \u015fehirde kredi yurtlar kurumunda kal\u0131yorum, Bolu\u2019daki kredi yurtlar kurumunda \u00fccretsiz konaklayabilir miyim?\r\nEvet.\r\nKonaklama i\u00e7in ba\u015fvuru d\u0131\u015f\u0131nda ek bir i\u015flem yapmam\u0131z gerekiyor mu?\r\nHay\u0131r. Kampa kesin kayd\u0131 yap\u0131lan herkes i\u00e7in konaklama ayarlamalar\u0131 (aksi kat\u0131l\u0131mc\u0131 taraf\u0131ndan belirtilmedik\u00e7e) da kamp organizasyonu taraf\u0131ndan yap\u0131l\u0131yor.\r\nYurtlarda odalar ka\u00e7 ki\u015filik?\r\nYurtlarda odalar 4 ki\u015filiktir.\r\nYurtlarda tek ki\u015filik odada kalmam\u0131z m\u00fcmk\u00fcn m\u00fc?\r\nYurtlar\u0131n mevcut kapasitesi ile ba\u011flant\u0131l\u0131 olarak, yurt y\u00f6netiminin izin vermesi durumunda m\u00fcmk\u00fcnd\u00fcr. Konuyu do\u011frudan yurt y\u00f6netimiyle g\u00f6r\u00fc\u015febilirsiniz. Ancak kampa kesin kayd\u0131 yap\u0131lan kimsenin konaklama i\u00e7in a\u00e7\u0131kta kalmayaca\u011f\u0131na emin olabilirsiniz.\r\nYurtlarda konaklamak t\u00fcm kamp kat\u0131l\u0131mc\u0131lar\u0131 i\u00e7in zorunlu mu?\r\nHay\u0131r. \u00dcniversite i\u00e7inde misafirhanede de konaklaman\u0131z m\u00fcmk\u00fcnd\u00fcr (\u00fccretleri farkl\u0131d\u0131r). Bolu\u2019da ba\u015fka bir yerde konaklayan kat\u0131l\u0131mc\u0131lar\u0131n e\u011fitim saatlerine (et\u00fct dahil) uymas\u0131 kendi sorumluluklar\u0131ndad\u0131r. E\u011fitimlere s\u0131k ge\u00e7 kalan ya da erken ayr\u0131lan kat\u0131l\u0131mc\u0131lar\u0131n kamp kayd\u0131 silinerek, kamptan ayr\u0131lmalar\u0131 istenecek, LKD ve INETD\u2019nin karalistesine al\u0131narak; gelecekte de bu iki kurumun d\u00fczenledi\u011fi herhangi bir kontenjanl\u0131 etkinli\u011fe ba\u015fvurunuz kabul edilmeyecektir.\r\nE\u011fitim program\u0131n\u0131n d\u0131\u015f\u0131nda Bolu iline ait k\u00fclt\u00fcr gezileri yap\u0131lmas\u0131 planlan\u0131yor mu?\r\nBolu \u00e7evresi do\u011fa a\u00e7\u0131s\u0131ndan zengin. Bu t\u00fcr gezilere kat\u0131lmak isteyecek ki\u015fi say\u0131s\u0131na g\u00f6re, kamp s\u0131ras\u0131nda gezi d\u00fczenlenmesi planlanmas\u0131 m\u00fcmk\u00fcnd\u00fcr.\r\nYemek \u00fccreti ne kadard\u0131r?\r\n\u00dcniversitenin yemekhanesinde yiyebilece\u011finiz gibi yerle\u015fkede, e\u011fitimlerin olaca\u011f\u0131 binaya y\u00fcr\u00fcy\u00fc\u015f mesafesinde bir\u00e7ok yemek yenebilecek yer var. Yemekte ne yiyece\u011finize ve nerede yiyece\u011finize ba\u011fl\u0131 olarak da fiyatlar\u0131 de\u011fi\u015fiyor. Ge\u00e7en sene ortalama bir insan i\u00e7in \u00f6\u011flen ya da ak\u015fam yeme\u011finin fiyat\u0131 4 ila 12 TL aras\u0131nda de\u011fi\u015fiyordu.\r\nYanl\u0131\u015fl\u0131kla birden fazla kursa ba\u015fvurdum, iptal etmek i\u00e7in ne yapmam gerekiyor?\r\nWeb sitesinde bulunan \u201c\u0130leti\u015fim\u201d formunu doldurarak, bu iste\u011finizi iletebilirsiniz.\r\nBa\u015fvurdu\u011fum kursu de\u011fi\u015ftirebilir miyim?\r\nKesin kabul i\u015fleminiz ger\u00e7ekle\u015fmediyse, son ba\u015fvuru tarihine kadar sisteme giri\u015f yaparak, ba\u015fvurunuzu de\u011fi\u015ftirebilirsiniz.\r\nKampa ba\u015fvurular ne zaman yap\u0131labilir?\r\nBa\u015fvurular 7 Temmuz\u2019dan itibaren yap\u0131labilecektir.\r\nKampa ba\u015fvurular en son ne zaman yap\u0131labilir?\r\nBa\u015fvurular 31 Temmuz g\u00fcn\u00fc saat 23:59\u2032da kapanacakt\u0131r.\r\nKampa ba\u015fvuru i\u00e7in istenen belgeler nelerdir?\r\nBir kurumda \u00e7al\u0131\u015fan ki\u015filerden g\u00f6revlendirme/izin yaz\u0131s\u0131 istenmektedir. Bu yaz\u0131y\u0131 getirmeyen ki\u015filerin kampa kesin kayd\u0131 yap\u0131lmamaktad\u0131r. G\u00f6revlendirme yaz\u0131s\u0131 i\u00e7in ihtiya\u00e7 duyulmas\u0131 durumunda, ki\u015fiye \u00f6zel davet/kabul yaz\u0131s\u0131 yaz\u0131lmas\u0131 m\u00fcmk\u00fcnd\u00fcr.\r\nKampa kat\u0131l\u0131m i\u00e7in bir ya\u015f s\u0131n\u0131r\u0131 var m\u0131d\u0131r?\r\nHay\u0131r. 18 ya\u015f\u0131n alt\u0131ndaki ki\u015filer i\u00e7in velilerinden izin belgesi istenmektedir.\r\nKamp ba\u015fvuru sonu\u00e7lar\u0131 ne zaman belli olacak?\r\nBa\u015fvuru sonu\u00e7lar\u0131 5 A\u011fustos\u2019a kadar a\u00e7\u0131klanacakt\u0131r. Kurumlardan g\u00f6revlendirme almas\u0131 gereken personele, bu s\u00fcreci tamamlayabilmesi i\u00e7in daha erken geri d\u00f6n\u00fc\u015f yap\u0131lmaktad\u0131r.\r\nBa\u015fvurumu nas\u0131l iptal edebilirim?\r\nKampa kesin kayd\u0131n\u0131z yap\u0131lmad\u0131ysa, \u201c\u0130leti\u015fim\u201d formunu doldurarak, ba\u015fvurunuzun iptal edilmesini isteyebilirsiniz.\r\nKampa kesin kayd\u0131m yap\u0131ld\u0131ktan sonra, kayd\u0131m\u0131 ne zamana kadar iptal edebilirim?\r\nKayd\u0131n\u0131z\u0131 t\u00fcm bu i\u015flemler yap\u0131ld\u0131ktan sonra iptal etmemeniz gerekir. Kesin kay\u0131t sonras\u0131 iptal etmeniz durumunda LKD ve INETD\u2019nin karalistesine al\u0131narak; gelecekte de bu iki kurumun d\u00fczenledi\u011fi herhangi bir kontenjanl\u0131 etkinli\u011fe ba\u015fvurunuz kabul edilmeyecektir.\r\nE\u011fitim i\u00e7in yan\u0131mda ne getirmeliyim?\r\nHer kat\u0131l\u0131mc\u0131n\u0131n kendi diz\u00fcst\u00fc bilgisayar\u0131n\u0131 getirmesini bekliyoruz. Bilgisayarda kurulu olmas\u0131 istenen Linux da\u011f\u0131t\u0131m\u0131 ve yaz\u0131l\u0131mlar kat\u0131laca\u011f\u0131n\u0131z e\u011fitime g\u00f6re farkl\u0131l\u0131k g\u00f6sterebilir, bu size kamp \u00f6ncesi g\u00f6nderilecek bilgilendirme e-postas\u0131nda belirtilecektir. E\u011fer yan\u0131n\u0131zda kendi bilgisayar\u0131n\u0131z olmayacaksa, bunu ba\u015fvuru formunda belirtiniz, size \u00fcniversiteden bilgisayar ayarlanmas\u0131na \u00e7al\u0131\u015f\u0131r\u0131z.\r\nSistem y\u00f6netimi e\u011fitimlerinde hangi da\u011f\u0131t\u0131m temelli anlat\u0131m yap\u0131lacak?\r\nSistem y\u00f6netimi e\u011fitimlerinde Redhat (Centos/Scientific) ve Debian da\u011f\u0131t\u0131mlar\u0131 temelli anlat\u0131m ger\u00e7ekle\u015fiyor. M\u00fcmk\u00fcn oldu\u011funca ikisi birden, olmad\u0131\u011f\u0131 noktalarda kat\u0131l\u0131mc\u0131lar\u0131n/e\u011fitmenin iste\u011fi de g\u00f6z \u00f6n\u00fcnde bulundurularak yaln\u0131zca biri \u015feklinde.\r\nS\u0131n\u0131flarda ve konaklama yerlerinde kablosuz \u0130nternet ba\u011flant\u0131s\u0131 olacak m\u0131?\r\nE\u011fitim yerlerinde kablosuz \u0130nternet ba\u011flant\u0131s\u0131 bulunuyor. Ancak yurtlarda konaklayacak misafirlerimiz i\u00e7in \u0130nternet ko\u015fullar\u0131 belirsiz. Et\u00fctler ge\u00e7 saate kadar s\u00fcrd\u00fc\u011f\u00fcnden, yurtlar genelde sadece uyumak i\u00e7in kullan\u0131lmaktad\u0131r. O nedenle \u0130nternet ba\u011flant\u0131s\u0131 s\u0131k\u0131nt\u0131s\u0131 ya\u015famayaca\u011f\u0131n\u0131z\u0131 umuyoruz.\r\nKamp\u0131n sadece belirli bir k\u0131sm\u0131na kat\u0131lmam m\u00fcmk\u00fcn m\u00fcd\u00fcr?\r\nHay\u0131r.\r\nKampa sadece haftai\u00e7i kat\u0131lmam m\u00fcmk\u00fcn m\u00fcd\u00fcr?\r\nHay\u0131r.\r\nKampa sadece haftasonu kat\u0131lmam m\u00fcmk\u00fcn m\u00fcd\u00fcr?\r\nHay\u0131r.\r\nKampta bir kursa ba\u015fvurup, kabul edilip, kamp s\u0131ras\u0131nda ba\u015fka bir kursa ge\u00e7mem m\u00fcmk\u00fcn m\u00fcd\u00fcr?\r\nHay\u0131r.\r\nKampa kat\u0131lacaklar\u0131n se\u00e7ilmesindeki kriterler nelerdir?\r\nBa\u015fvurular\u0131n de\u011ferlendirilmesinde kullan\u0131lan kriterleri \u015furada bulabilirsiniz.\r\nKamp sonunda kampa kat\u0131ld\u0131\u011f\u0131m\u0131za dair bir belge verilecek mi?\r\nEvet. Kampa kat\u0131ld\u0131\u011f\u0131n\u0131za dair bir kat\u0131l\u0131m belgesi kamp sonunda kat\u0131l\u0131mc\u0131lara verilecektir.\r\nE\u011fitime online kat\u0131labilir miyiz?\r\nHay\u0131r. Kamp \u00f6rg\u00fcn olarak ger\u00e7ekle\u015ftiriliyor.\r\nE\u011fitime kat\u0131lam\u0131yorum. E\u011fitimler i\u00e7in notlar haz\u0131rlanabilir ve e\u011fitimler video\u2019ya \u00e7ekilebilir mi?\r\nE\u011fitmenler varsa kendi haz\u0131rlad\u0131klar\u0131 sunum dosyalar\u0131n\u0131 \u0130nternet\u2019te payla\u015f\u0131yorlar. Kat\u0131lamayanlar i\u00e7in \u00f6zel olarak ek notlar haz\u0131rlanmas\u0131 ya da video \u00e7ekimi yap\u0131lmas\u0131 d\u00fc\u015f\u00fcn\u00fclmemektedir.\r\nKampa ba\u015fvurum kabul edilip, kamp gelip t\u00fcm e\u011fitime kat\u0131lmazsam ne olur?\r\nKat\u0131l\u0131mc\u0131lar\u0131n kamp\u0131n ilk g\u00fcn\u00fcnden son g\u00fcn\u00fcne kadar kamp\u0131n tamam\u0131na kat\u0131lmalar\u0131 beklenmektedir. Buna uymayan kat\u0131l\u0131mc\u0131lar, kamp\u0131n tamam\u0131na kat\u0131labilecek ve yararlanabilecek ba\u015fka insanlara engel olmu\u015f olurlar. Derslerin ve et\u00fctlerin tamam\u0131na kat\u0131lmayan kat\u0131l\u0131mc\u0131lar\u0131n kamptan ayr\u0131lmalar\u0131 istenecektir. Kat\u0131l\u0131m belgesi verilmeyecek, LKD ve INETD\u2019nin karalistesine al\u0131narak; gelecekte de bu iki kurumun d\u00fczenledi\u011fi herhangi bir kontenjanl\u0131 etkinli\u011fe ba\u015fvurusu kabul edilmeyecektir.\r\nKamptan kimseye haber vermeden ayr\u0131labilir miyim?\r\nHay\u0131r. Ge\u00e7erli bir mazeretiniz olsa dahi, kamp g\u00f6revlilerine ayr\u0131ld\u0131\u011f\u0131n\u0131za dair mutlaka haber vermelisiniz. Buna uymayan kat\u0131l\u0131mc\u0131lar LKD ve INETD\u2019nin karalistesine al\u0131narak; gelecekte de bu iki kurumun d\u00fczenledi\u011fi herhangi bir kontenjanl\u0131 etkinli\u011fe ba\u015fvurusu kabul edilmeyecektir.\r\nKamp s\u0131ras\u0131nda ayn\u0131 konuda a\u00e7\u0131lan ba\u015fka bir s\u0131n\u0131fa ge\u00e7ebilir miyim?\r\nHay\u0131r. Kamp s\u0131ras\u0131nda, ayn\u0131 konuda da olsa s\u0131n\u0131f de\u011fi\u015ftirmek m\u00fcmk\u00fcn de\u011fildir.\r\nHemen gidip LKD ya da INETD\u2019ye \u00fcye olsam, kampa kay\u0131tta bana \u00f6ncelik sa\u011flan\u0131r m\u0131?\r\nHay\u0131r. Her iki dernek de sadece kampta \u00f6ncelik sa\u011flamas\u0131 amac\u0131yla \u00fcye olmak isteyenleri kabul etmemektedir. L\u00fctfen bu t\u00fcr \u00fcyelik ba\u015fvurular\u0131 yapmay\u0131n.\r\nKamp bu sene niye daha k\u0131sa?\r\nCumhurba\u015fkanl\u0131\u011f\u0131 se\u00e7imleri ve Ramazan nedeniyle, yaz d\u00f6neminde 15 g\u00fcnl\u00fck bir bo\u015fluk bulunamad\u0131. O nedenle kamp\u0131 iptal etmek yerine, 12 g\u00fcne k\u0131saltmay\u0131 tercih ettik.\r\nKampta bu sene daha az m\u0131 konu i\u015flenecek?\r\nKamp\u0131n 3 g\u00fcn daha k\u0131sa olmas\u0131 nedeniyle, mecburen belli konular atlanabilir ya da daha h\u0131zl\u0131 i\u015flenebilir. Bu e\u011fitmenlerin tercihiyle ger\u00e7ekle\u015fecektir.\r\nBa\u015fka kurslar a\u00e7\u0131lacak m\u0131?\r\nKampta ba\u015fka bir kurs a\u00e7\u0131lmas\u0131 durumunda bu web sitesinde yay\u0131nlanacak ve o g\u00fcne kadar ba\u015fvuru yapm\u0131\u015f ki\u015filere e-posta ile bildirilecektir.\r\nNiye ba\u015fvuran herkesi kampa kabul etmiyorsunuz?\r\nE\u011fitimlerin kat\u0131lanlara ger\u00e7ek anlamda yararl\u0131 olabilmesi i\u00e7in, s\u0131ras\u0131nda, her bir s\u0131n\u0131fta e\u011fitmen/kat\u0131l\u0131mc\u0131 say\u0131s\u0131n\u0131n belirli bir oran\u0131n \u00fcst\u00fcne \u00e7\u0131kmamas\u0131na \u00f6zen g\u00f6steriyoruz. Kontenjan\u0131n \u00e7ok \u00fczerinde (baz\u0131 kurslarda 10 kata yak\u0131n) bir ba\u015fvuru ald\u0131\u011f\u0131m\u0131z i\u00e7in, zorunlu olarak bir\u00e7ok insan\u0131 kampa istememize kar\u015f\u0131n alam\u0131yoruz.\r\nSe\u00e7ilmesem de gelip dersleri izlesem, kat\u0131lmasam olur mu?\r\nHay\u0131r. S\u0131n\u0131flarda b\u00f6yle bir yer olana\u011f\u0131m\u0131z bulunmuyor.\r\nSe\u00e7ilmesem de, atlay\u0131p Bolu\u2019ya gelsem, beni kap\u0131dan \u00e7evirecek haliniz yok herhalde?\r\nEvet, sizi kap\u0131dan geri \u00e7evirece\u011fiz. Yukar\u0131da belirtti\u011fimiz kontenjan k\u0131s\u0131tlar\u0131 nedeniyle, bunu zorunlu olarak yap\u0131yoruz.\r\nKamp ba\u015fvuru sonucumu nas\u0131l \u00f6\u011frenece\u011fim?\r\n5 A\u011fustos\u2019ta kamp web sitesinde a\u00e7\u0131klanacak. Daha ilerleyen tarihlerde e-posta ile de bildirimde bulunulabilir.", 
+        "venue": 1, 
+        "slug": "lkd-yaz-kampi-2014", 
+        "cover_image": "event_cover_images/1-2.jpg", 
+        "start_date": "2014-08-08"
+    }
+},
+{
+    "pk": 1, 
+    "model": "courses.course", 
+    "fields": {
+        "slug": "linux-sistem-yonetimi-1-duzey", 
+        "description": "", 
+        "end_date": "2014-08-23", 
+        "instructors": [
+            7, 
+            16, 
+            21
+        ], 
+        "quota": 50, 
+        "event": 1, 
+        "deadline_date": "2014-08-15", 
+        "participation_rules": "Okudu\u011funu anlayabilecek d\u00fczeyde \u0130ngilizce bilgisi", 
+        "covered_topics": "KONULAR\r\nKomut Sat\u0131r\u0131 (Kabuk) ve Temel Komutlar\r\nGNU/Linux \u0130\u015fletim Sisteminin Yap\u0131s\u0131\r\nA\u00e7\u0131l\u0131\u015f Sistemi ve Kullan\u0131c\u0131 Y\u00f6netimi\r\nPaket Y\u00f6netim Sistemi\r\nZamanlanm\u0131\u015f G\u00f6revler\r\nSistem Kay\u0131tlar\u0131\r\nTemel TCP/IP Bilgisi ve A\u011f Y\u00f6netimi\r\nG\u00fcvenli Uzaktan Eri\u015fim\r\nYedekleme\r\nDNS ve Web Teknolojisine Giri\u015f\r\n", 
+        "start_date": "2014-08-11", 
+        "name": "Linux Sistem Y\u00f6netimi (1. D\u00fczey)"
+    }
+},
+{
+    "pk": 2, 
+    "model": "courses.course", 
+    "fields": {
+        "slug": "python-django-web-programlama", 
+        "description": "", 
+        "end_date": "2014-08-18", 
+        "instructors": [
+            9
+        ], 
+        "quota": 40, 
+        "event": 1, 
+        "deadline_date": "2014-08-08", 
+        "participation_rules": "Okudu\u011funu anlayabilecek d\u00fczeyde \u0130ngilizce bilgisi\r\nHerhangi bir nesneye y\u00f6nelik programlama dilinde yaz\u0131l\u0131m geli\u015ftirebilmek\r\nLinux masa\u00fcst\u00fcne a\u015fina olmak (yaz\u0131l\u0131m geli\u015ftirme Linux \u00fczerinde yap\u0131lacakt\u0131r)", 
+        "covered_topics": "Web geli\u015ftiricileri i\u00e7in temel a\u011f bilgisi\r\nA\u011f performans\u0131n\u0131n web uygulamalar\u0131na etkisi\r\n\u00c7evrimi\u00e7i (dial-up) ba\u011flant\u0131\r\nDSL Ba\u011flant\u0131\r\n\u0130nternet-\u0130ntranet\r\nHTTP, Ajax, Comet\r\nY\u00fck Dengeleyiciler\r\nHTTP\r\nHTTP hata kodlar\u0131\r\n\u201cDurumsuz\u201d (stateless) olmas\u0131\r\nGET/POST metotlar\u0131\r\n\u00c7erezler (Cookie)\r\nOturumlar\r\nHTML\r\nDil yap\u0131s\u0131\r\nGrafik / HTML g\u00f6sterim farkl\u0131l\u0131\u011f\u0131\r\n\u0130stemciler aras\u0131nda yorum farklar\u0131\r\nTest ve hata ay\u0131klama ara\u00e7lar\u0131\r\n\u00d6nbellek\r\n\u0130stemci \u00f6nbelle\u011fi\r\nProxy sunucular, Reverse Proxy Sunucular\r\n\u00d6nbellek Y\u00f6netim Teknikleri\r\n\u0130\u00e7erik S\u0131k\u0131\u015ft\u0131rma (JavaScript, CSS, HTML, Resim)\r\nWeb istemci programlamas\u0131\r\n\u0130stemci eklentileri ile yorumlama (Java applet, Adobe Flash)\r\nJavascript\r\nCSS\r\nHTML 5\r\nWeb sunucu programlamas\u0131\r\nGenel Teknikler ( CGI, ISAPI, NSAPI )\r\nGenel Teknoloji Yakla\u015f\u0131mlar\u0131 ( PHP vs Python vs Ruby vs Java vs .Net )\r\nVeri Taban\u0131 \u0130\u015flemleri ( SQL, NoSQL )\r\nWeb Servisleri\r\nWeb g\u00fcvenli\u011fi\r\nKullan\u0131c\u0131 do\u011frulama mekanizmalar\u0131\r\nSSL\r\nUygulamalar\u0131n tipik g\u00fcvenlik sorunlar\u0131\r\nWeb uygulamalar\u0131nda s\u00fcr\u00fcm takip sistemi kullan\u0131m\u0131 (Git)\r\n \r\nPython\u2019a giri\u015f\r\nPython\u2019\u0131 nas\u0131l bir dildir\r\nYorumlanan ve derlenen diller\r\nKurulum ve environment hakk\u0131nda bilgiler\r\nPython\u2019da kod yazmaya giri\u015f\r\nPython\u2019\u0131n s\u00f6zdizimsel \u00f6zellikleri\r\nPython Internals\r\nTemel program ak\u0131\u015f\u0131 y\u00f6netimi komutlar\u0131\r\nVeri tiplerine k\u0131saca bak\u0131\u015f\r\nDuck typing ne demektir\r\nFonksiyonlar (callable) objeler hakk\u0131nda bilgiler\r\nGenerators ve iterable objeler\r\nDecorators\r\nObject Oriented Programming\r\nObject oriented y\u00f6nelimi hakk\u0131nda bilgiler\r\nS\u0131n\u0131f kavram\u0131 ne demektir\r\nInheritance: birbirinden t\u00fcreyen s\u0131n\u0131flar\r\nComposition: s\u0131n\u0131flar\u0131n birbiri aras\u0131ndaki etkile\u015fimi\r\nMixins: birden fazla s\u0131n\u0131ftan t\u00fcreyen s\u0131n\u0131flar\r\nDesign pattern\u2019lar nedir ve bize ne kazand\u0131r\u0131r\r\nFunctional Programming\r\nFonksiyonel programlama nedir\r\nPython fonksiyonel bir dil midir\r\nTemel fonksiyonel programlama konseptleri\r\nHer \u015feyin ba\u015f\u0131 map ve reduce\r\nMeta Python\r\nBir \u015feylere isim koymak (naming conventions)\r\nBir i\u015fin pitonik yolu\r\nPython\u2019\u0131n tasar\u0131m prensipleri\r\nDjango\u2019ya giri\u015f\r\nDjango nedir\r\nMVC kavram\u0131 ne anlama geliyor\r\nKurulum ve environment y\u00f6netimi\r\nBir proje nas\u0131l olu\u015fturulur\r\nModels\r\nBasit bir model tan\u0131m\u0131\r\nModeller aras\u0131ndaki ili\u015fkiler\r\nForeignKey\r\nManyToManyField\r\nForeignKey neyimize yetmiyor?\r\nSymmetrical se\u00e7ene\u011fi\r\nModel Inheritance\r\nManager kavram\u0131\r\nMigrations\r\nQuerySets\r\nFiltering\r\nKarma\u015f\u0131k sorgular\r\nAggregation ve Annotate\r\nOptimizasyon\r\nPrefect related\r\nSelect related\r\nValues\r\nViews\r\nView nas\u0131l tan\u0131mlan\u0131r\r\nTemplates\r\nNas\u0131l olu\u015fturulur ve kullan\u0131l\u0131r\r\nTemplate inheritance\r\nTemplate tags & filters\r\nUrl y\u00f6netimi\r\nRequest ve Response objeleri\r\nSession\u2019lar\r\nCookie\u2019ler\r\n\u0130stemci bilgilerine ula\u015fmak\r\nPOST ve GET metodu\r\nFormlar\r\nForm tan\u0131mlamak\r\nValidation s\u0131n\u0131flar\u0131\r\nModelForm\u2019lar\r\nFormset ve ModelFormset kavram\u0131\r\nClass based view\u2019lar\r\nMiddleware kavram\u0131\r\nAdmin Uygulamas\u0131\r\nAdmin uygulamas\u0131n\u0131 aktif etmek\r\nAdmin i\u00e7in model y\u00f6netimi\r\n\u00d6zelle\u015ftirilmi\u015f bir admin paneli\r\ni18n ve l10n\r\nInternalization\r\nDil dosyalar\u0131 olu\u015fturmak ve derlemek\r\nDil dosyalar\u0131n\u0131 da\u011f\u0131tmak\r\nLocalization", 
+        "start_date": "2014-08-11", 
+        "name": "Python/Django ile Web Programlama"
+    }
+},
+{
+    "pk": 3, 
+    "model": "courses.course", 
+    "fields": {
+        "slug": "php-ile-yazilim-gelistirme", 
+        "description": "", 
+        "end_date": "2014-08-08", 
+        "instructors": [
+            2, 
+            11
+        ], 
+        "quota": 50, 
+        "event": 1, 
+        "deadline_date": "2014-08-08", 
+        "participation_rules": "Okudu\u011funu anlayabilecek d\u00fczeyde \u0130ngilizce bilgisi\r\nHerhangi bir programlama dilinde yaz\u0131l\u0131m geli\u015ftirebilmek\r\nSanal makine kurabilme / kullanabilme\r\nTemel d\u00fczeyde Linux komutlar\u0131na a\u015final\u0131k", 
+        "covered_topics": "Web geli\u015ftiricileri i\u00e7in temel a\u011f bilgisi\r\nA\u011f performans\u0131n\u0131n web uygulamalar\u0131na etkisi\r\n\u00c7evrimi\u00e7i (dial-up) ba\u011flant\u0131\r\nDSL Ba\u011flant\u0131\r\n\u0130nternet-\u0130ntranet\r\nHTTP, Ajax, Comet\r\nY\u00fck Dengeleyiciler\r\nHTTP\r\nHTTP hata kodlar\u0131\r\n\u201cDurumsuz\u201d (stateless) olmas\u0131\r\nGET/POST metotlar\u0131\r\n\u00c7erezler (Cookie)\r\nOturumlar\r\nHTML\r\nDil yap\u0131s\u0131\r\nGrafik / HTML g\u00f6sterim farkl\u0131l\u0131\u011f\u0131\r\n\u0130stemciler aras\u0131nda yorum farklar\u0131\r\nTest ve hata ay\u0131klama ara\u00e7lar\u0131\r\n\u00d6nbellek\r\n\u0130stemci \u00f6nbelle\u011fi\r\nProxy sunucular, Reverse Proxy Sunucular\r\n\u00d6nbellek Y\u00f6netim Teknikleri\r\n\u0130\u00e7erik S\u0131k\u0131\u015ft\u0131rma (JavaScript, CSS, HTML, Resim)\r\nWeb istemci programlamas\u0131\r\n\u0130stemci eklentileri ile yorumlama (Java applet, Adobe Flash)\r\nJavascript\r\nCSS\r\nHTML 5\r\nWeb sunucu programlamas\u0131\r\nGenel Teknikler ( CGI, ISAPI, NSAPI )\r\nGenel Teknoloji Yakla\u015f\u0131mlar\u0131 ( PHP vs Python vs Ruby vs Java vs .Net )\r\nVeri Taban\u0131 \u0130\u015flemleri ( SQL, NoSQL )\r\nWeb Servisleri\r\nWeb g\u00fcvenli\u011fi\r\nKullan\u0131c\u0131 do\u011frulama mekanizmalar\u0131\r\nSSL\r\nUygulamalar\u0131n tipik g\u00fcvenlik sorunlar\u0131\r\nWeb uygulamalar\u0131nda s\u00fcr\u00fcm takip sistemi kullan\u0131m\u0131 (Git)\r\nPHP nedir?\r\nS\u00f6zdizimi\r\nDe\u011fi\u015fkenler\r\nDe\u011fi\u015fken T\u00fcrleri\r\nSabitler\r\nDiziler\r\nS\u00fcper-Global / \u00d6n Tan\u0131ml\u0131 De\u011fi\u015fkenler\r\nAritmetik \u0130\u015flemler\r\nMant\u0131ksal \u0130fadeler ve \u0130\u015flemler\r\nDenetim Yap\u0131lar\u0131\r\nS\u0131nama\r\nKo\u015fullar\r\nD\u00f6ng\u00fcler ve Yinelemeler\r\n\u0130\u015flevler\r\nParametreler\r\nD\u00f6n\u00fc\u015f De\u011ferleri\r\nDe\u011fi\u015fken \u0130\u015flevler\r\nAnonim \u0130\u015flevler\r\nWeb Programlama\r\nForm \u0130\u015fleme\r\n\u00c7erezler ve Oturumlar\r\nDosya Y\u00fckleme\r\nVeritabanlar\u0131\r\nG\u00fcvenlik", 
+        "start_date": "2014-08-08", 
+        "name": "PHP ile Yaz\u0131l\u0131m Geli\u015ftirme"
+    }
+},
+{
+    "pk": 1, 
+    "model": "courses.administrativenote", 
+    "fields": {
+        "note": "hehehe", 
+        "user": 1, 
+        "adder": 1
+    }
+}
+]
