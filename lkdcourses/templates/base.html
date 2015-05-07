@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LKD Kurs Yazılımı</title>
+</head>
+<body>
+{% if user.is_authenticated %}
+    {{ user.username }} | <a href="{% url 'django.contrib.auth.views.logout_then_login' %}">Çıkış</a>
+{% else %}
+    <a href="{% url 'django.contrib.auth.views.login' %}">Giriş</a>
+{% endif %}
+<hr>
+{% block content %}
+{% endblock %}
+</body>
+</html>
