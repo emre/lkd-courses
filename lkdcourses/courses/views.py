@@ -1,6 +1,7 @@
 # coding: utf-8
 
 from django import forms
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.core.urlresolvers import reverse_lazy
@@ -33,7 +34,14 @@ def register(request):
     })
 
 
-class UserProfileUpdate(UpdateView):
+class LoginRequiredMixin(object):
+
+    @classmethod
+    def as_view(cls):
+        return login_required(super(LoginRequiredMixin, cls).as_view())
+
+
+class UserProfileUpdate(LoginRequiredMixin, UpdateView):
     model = UserProfile
     form_class = UserProfileForm
     template_name = 'courses/user_profile.html'
