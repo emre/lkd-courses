@@ -172,8 +172,8 @@ class AdministrativeNote(models.Model):
 
 class UserProfile(models.Model):
     user = models.ForeignKey(User)
-    address = models.TextField("Adres")
-    phone = models.CharField("Telefon numarası", max_length=20)
+    address = models.TextField("Adres", blank=True, null=True)
+    phone = models.CharField("Telefon numarası", max_length=20, blank=True, null=True)
     company = models.CharField(
         "Çalıştığı şirket",
         blank=True,
@@ -181,12 +181,12 @@ class UserProfile(models.Model):
         help_text="Kamu çalışanları bağlı oldukları müdürlüğü yazabilir.",
         max_length=255
     )
-    public_officer = models.BooleanField("Kamu çalışanı", default=False)
+    public_officer = models.NullBooleanField("Kamu çalışanı", default=False, blank=True, null=True)
     role = models.CharField("Bağlı olunan departman/bölüm", blank=True, null=True, max_length=255)
-    birthdate = models.DateField("Doğum tarihi")
+    birthdate = models.DateField("Doğum tarihi", blank=True, null=True)
     lkd_id = models.CharField("LKD üye numarası", blank=True, null=True, max_length=32)
     inetd_id = models.CharField("INETD üye numarası", blank=True, null=True, max_length=32)
-    github_username = models.CharField("Github kullanıcı adı", max_length=64)
+    github_username = models.CharField("Github kullanıcı adı", max_length=64, blank=True, null=True)
 
     def __unicode__(self):
         return smart_unicode(self.user.username)
