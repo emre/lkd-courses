@@ -11,7 +11,9 @@
     <a href="{% url 'courses:profile_edit' %}">Profilim</a> |
     <a href="{% url 'django.contrib.auth.views.logout_then_login' %}">Çıkış</a>
 {% else %}
-    <a href="{% url 'django.contrib.auth.views.login' %}">Giriş</a> | <a href="{% url 'courses:register' %}">Kayıt ol</a>
+    <a href="{% url 'django.contrib.auth.views.login' %}">Giriş</a> |
+    <a href="{% url 'courses:register' %}">Kayıt ol</a> |
+    <a href="{% url 'password_reset' %}">Parola sıfırla</a>
 {% endif %}
 <hr>
 {% if messages %}
