@@ -1,10 +1,10 @@
 from django.conf.urls import url
 
-from .views import index, register, UserProfileUpdate
+from .views import IndexView, UserProfileUpdate, RegisterView
 
 
 urlpatterns = [
-    url(r'^$', index, name='index'),
-    url(r'^register/$', register, name='register'),
+    url(r'^$', IndexView.as_view(), name='index'),
+    url(r'^register/$', RegisterView.as_view(), name='register'),
     url(r'^profile/$', UserProfileUpdate.as_view(), name='profile_edit'),
 ]

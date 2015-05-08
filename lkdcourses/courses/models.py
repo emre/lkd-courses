@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
+from django.db.models.signals import post_save
 from django.utils.encoding import smart_unicode
 from django.contrib.auth.models import User
 
@@ -195,3 +196,10 @@ class UserProfile(models.Model):
         db_table = "user_profiles"
         verbose_name = "Kullanıcı profili"
         verbose_name_plural = "Kullanıcı profilleri"
+
+
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        UserProfile.objects.create(user=instance)
+
+post_save.connect(create_user_profile, sender=User)
