@@ -4,7 +4,7 @@ from .models import *
 
 
 class CourseAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug':('name',),}
+    prepopulated_fields = {'slug': ('name',)}
     filter_horizontal = ('instructors',)
     search_fields = ['name']
     list_display = ('name', 'event', 'start_date', 'end_date', 'deadline_date', 'quota')
@@ -20,6 +20,7 @@ class VenueAdmin(admin.ModelAdmin):
 
 
 class EventAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name',)}
     search_fields = ['name']
     list_display = ('name', 'start_date', 'end_date', 'venue')
 

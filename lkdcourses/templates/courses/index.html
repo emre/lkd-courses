@@ -1,5 +1,24 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
-ana sayfa
+<h2>Etkinlikler</h2>
+
+{% for event in object_list %}
+<h3>{{ event.name }} <a href="">Başvur</a></h3>
+<p>
+    ({{ event.start_date }}-{{ event.end_date }}, {{ event.venue.name }})
+</p>
+<p>
+    <img src="{% get_media_prefix %}{{ event.cover_image }}" style="width: 100px;">
+</p>
+<p>Kurslar</p>
+{% for course in event.course_set.all %}
+<p>
+    {{ course.name }} - {{ course.instructors.all|join:", " }} ({{ course.start_date }}-{{ course.end_date }})
+</p>
+{% endfor %}
+<hr>
+{% endfor %}
 {% endblock %}

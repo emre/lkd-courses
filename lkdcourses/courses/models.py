@@ -138,7 +138,7 @@ class UserChoice(models.Model):
 
 class Application(models.Model):
     user = models.ForeignKey(User, related_name="application_user")
-    course = models.ForeignKey(Event)
+    event = models.ForeignKey(Event)
     choices = models.ManyToManyField(UserChoice)
     application_date = models.DateTimeField("Başvuru tarihi")
     approved = models.BooleanField("Onay durumu", default=False)
