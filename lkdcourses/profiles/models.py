@@ -16,6 +16,7 @@ class UserProfile(auth_models.AbstractUser):
         help_text="Kamu çalışanları bağlı oldukları müdürlüğü yazabilir.",
         max_length=255
     )
+    tc_identifier = models.IntegerField("Tc kimlik numarası", blank=True, null=True)
     public_officer = models.NullBooleanField("Kamu çalışanı", default=False, blank=True, null=True)
     role = models.CharField("Bağlı olunan departman/bölüm", blank=True, null=True, max_length=255)
     birthdate = models.DateField("Doğum tarihi", blank=True, null=True)
