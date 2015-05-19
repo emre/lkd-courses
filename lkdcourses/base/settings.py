@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 """
 Django settings for lkdcourses project.
 
@@ -47,6 +50,12 @@ INSTALLED_APPS = (
     'events',
     'profiles',
 )
+
+THIRD_PARTY_APPS = (
+    'djrill',
+)
+
+INSTALLED_APPS += THIRD_PARTY_APPS
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -105,3 +114,5 @@ FIXTURE_DIRS = (
 
 AUTH_USER_MODEL = 'profiles.UserProfile'
 
+MAILING_FROM_EMAIL = "kurs@lkd.org.tr"
+MAILING_FROM_NAME = "LKD Yaz Kampı"

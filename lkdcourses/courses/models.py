@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from django.db import models
-from django.db.models.signals import post_save
 from django.utils.encoding import smart_unicode
 
 
@@ -59,7 +58,7 @@ class UserChoice(models.Model):
     priority = models.IntegerField("Öncelik")  # [1-N]
 
     def __unicode__(self):
-        return smart_unicode("{0} - {1} - {2}".format(self.event, self.course, self.priority))
+        return smart_unicode("{0} - {1} - {2}".format(self.event, self.event, self.priority))
 
     class Meta:
         db_table = 'user_choices'
@@ -80,7 +79,7 @@ class Application(models.Model):
     notes = models.TextField("Notlar", blank=True, null=True)
 
     def __unicode__(self):
-        return smart_unicode("{0} - {1}".format(self.user, self.course))
+        return smart_unicode("{0} - {1}".format(self.user, self.event))
 
     class Meta:
         db_table = "applications"

@@ -14,3 +14,5 @@ TEMPLATE_DEBUG = DEBUG
 SECRET_KEY = '\m/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+MANDRILL_API_KEY = "FOO-BAR"
