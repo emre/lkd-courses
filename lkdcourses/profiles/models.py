@@ -5,6 +5,7 @@ from django.utils.encoding import smart_unicode
 from django.contrib.auth import models as auth_models
 from django.utils import timezone
 
+from .constants import *
 
 class UserProfile(auth_models.AbstractUser):
     address = models.TextField("Adres", blank=True, null=True)
@@ -36,6 +37,7 @@ class AdministrativeNote(models.Model):
     user = models.ForeignKey(UserProfile, related_name="notted_user")
     adder = models.ForeignKey(UserProfile, related_name="adder")
     note = models.TextField("Not")
+    note_type = models.IntegerField(choices=ADMINISTRATIVE_NOTE_TYPES, blank=True, null=True, db_index=True)
     created_at = models.DateTimeField(default=timezone.now)
 
     def __unicode__(self):
