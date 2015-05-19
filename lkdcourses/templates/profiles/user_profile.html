@@ -3,7 +3,7 @@
 {% block title %}Profilim{% endblock %}
 
 {% block content %}
-    <form action="{% url 'courses:profile_edit' %}" method="post">
+    <form action="{% url 'profiles:profile_edit' %}" method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Düzenle">

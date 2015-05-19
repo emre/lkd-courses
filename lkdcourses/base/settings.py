@@ -44,6 +44,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'courses',
+    'events',
+    'profiles',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -100,3 +102,6 @@ MEDIA_URL = '/media/'
 FIXTURE_DIRS = (
     os.path.join(BASE_DIR, 'fixtures'),
 )
+
+AUTH_USER_MODEL = 'profiles.UserProfile'
+

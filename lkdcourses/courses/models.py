@@ -3,12 +3,12 @@
 from django.db import models
 from django.db.models.signals import post_save
 from django.utils.encoding import smart_unicode
-from django.contrib.auth.models import User
 
 
 class Instructor(models.Model):
     fullname = models.CharField("ad soyad", max_length=255)
     avatar = models.ImageField(upload_to="instructor_avatars", blank=True, null=True)
+    about_text = models.TextField("Eğitmen hakkında", null=True, blank=True)
 
     def __unicode__(self):
         return smart_unicode(self.fullname)
@@ -19,82 +19,8 @@ class Instructor(models.Model):
         verbose_name_plural = "Eğitmenler"
 
 
-class Sponsor(models.Model):
-    name = models.CharField("Sponsor ismi", max_length=255)
-    url = models.CharField("Sponsor adres", max_length=255)
-
-    def __unicode__(self):
-        return smart_unicode(self.name)
-
-    class Meta:
-        db_table = "sponsors"
-        verbose_name = "Sponsor"
-        verbose_name_plural = "Sponsorlar"
-
-
-class Venue(models.Model):
-    name = models.CharField("Etkinliğin yapılacağı alanın adı", max_length=255)
-    address = models.TextField("Alanın adresi")
-    directions = models.TextField("Alana ulaşım için yönlendirmeler")
-    accommodation = models.TextField("Konaklama ile ilgili bilgiler.")
-    latitude = models.DecimalField(max_digits=6, decimal_places=3, help_text="Harita gösterimi için gerekli.")
-    longitude = models.DecimalField(max_digits=6, decimal_places=3, help_text="Harita gösterimi için gerekli.")
-
-    def __unicode__(self):
-        return smart_unicode(self.name)
-
-    class Meta:
-        db_table = 'venues'
-        verbose_name = "Etkinlik alanı"
-        verbose_name_plural = "Etkinlik alanları"
-
-
-class Event(models.Model):
-    name = models.CharField("Etkinlik adı", max_length=255)
-    slug = models.SlugField()
-    cover_image = models.ImageField(upload_to="event_cover_images")
-    start_date = models.DateField("Başlangıç tarihi")
-    end_date = models.DateField("Bitiş tarihi")
-    allowed_course_count = models.IntegerField(
-        "Tek bir kişinin başvuru yapabileceği kurs sayısı",
-        help_text="Biri asil, diğerleri yedek olmak üzere toplam.",
-        default=2,
-    )
-    faq = models.TextField("Sıkça sorulan sorular")
-    venue = models.ForeignKey(Venue)
-
-    def __unicode__(self):
-        return smart_unicode(self.name)
-
-    class Meta:
-        db_table = 'events'
-        verbose_name = "Etkinlik"
-        verbose_name_plural = "Etkinlikler"
-
-
-SPONSOR_TYPES = (
-    ('1', 'platin'),
-    ('2', 'altın'),
-    ('4', 'gümüş'),
-    ('5', 'bronz'),
-)
-
-
-class EventSponsor(models.Model):
-    event = models.ForeignKey(Event)
-    sponsor = models.ForeignKey(Sponsor)
-    type = models.IntegerField(choices=SPONSOR_TYPES)
-
-    def __unicode__(self):
-        return smart_unicode("{0} - {1}".format(self.event, self.sponsor))
-
-    class Meta:
-        db_table = "event_sponsors"
-        verbose_name = "Etkinlik sponsoru"
-        verbose_name_plural = "Etkinlik sponsorları"
-
 class Course(models.Model):
-    event = models.ForeignKey(Event)
+    event = models.ForeignKey("events.Event")
     name = models.CharField("Kurs ismi", max_length=255)
     description = models.TextField("Kurs açıklaması", blank=True, null=True)
     slug = models.SlugField()
@@ -122,8 +48,13 @@ class Course(models.Model):
 
 
 class UserChoice(models.Model):
-    user = models.ForeignKey(User)
-    event = models.ForeignKey(Event)
+    """
+    One user may apply more than one courses with priority. If they didn't get acception from the course instructors,
+    their application is valid for lower priority courses.
+    """
+
+    user = models.ForeignKey("profiles.UserProfile")
+    event = models.ForeignKey("events.Event")
     course = models.ForeignKey(Course)
     priority = models.IntegerField("Öncelik")  # [1-N]
 
@@ -137,12 +68,12 @@ class UserChoice(models.Model):
 
 
 class Application(models.Model):
-    user = models.ForeignKey(User, related_name="application_user")
-    event = models.ForeignKey(Event)
+    user = models.ForeignKey("profiles.UserProfile", related_name="application_user")
+    event = models.ForeignKey("events.Event")
     choices = models.ManyToManyField(UserChoice)
     application_date = models.DateTimeField("Başvuru tarihi")
     approved = models.BooleanField("Onay durumu", default=False)
-    approved_by = models.ForeignKey(User, verbose_name="Onaylayan", blank=True, null=True)
+    approved_by = models.ForeignKey("profiles.UserProfile", verbose_name="Onaylayan", blank=True, null=True)
     approve_date = models.DateTimeField("Onaylanma tarihi", blank=True, null=True)
     permit_file = models.FileField(upload_to="permit_files", blank=True, null=True)
     need_accommodation = models.BooleanField("Konaklama ihtiyacı", default=0)
@@ -156,50 +87,3 @@ class Application(models.Model):
         verbose_name = "Başvuru"
         verbose_name_plural = "Başvurular"
 
-
-class AdministrativeNote(models.Model):
-    user = models.ForeignKey(User, related_name="notted_user")
-    adder = models.ForeignKey(User, related_name="adder")
-    note = models.TextField("Not")
-
-    def __unicode__(self):
-        return smart_unicode("{0} #{1}".format(self.user, self.id))
-
-    class Meta:
-        db_table = "administrative_notes"
-        verbose_name = "Yönetimsel not"
-        verbose_name_plural = "Yönetimsel notlar"
-
-
-class UserProfile(models.Model):
-    user = models.ForeignKey(User)
-    address = models.TextField("Adres", blank=True, null=True)
-    phone = models.CharField("Telefon numarası", max_length=20, blank=True, null=True)
-    company = models.CharField(
-        "Çalıştığı şirket",
-        blank=True,
-        null=True,
-        help_text="Kamu çalışanları bağlı oldukları müdürlüğü yazabilir.",
-        max_length=255
-    )
-    public_officer = models.NullBooleanField("Kamu çalışanı", default=False, blank=True, null=True)
-    role = models.CharField("Bağlı olunan departman/bölüm", blank=True, null=True, max_length=255)
-    birthdate = models.DateField("Doğum tarihi", blank=True, null=True)
-    lkd_id = models.CharField("LKD üye numarası", blank=True, null=True, max_length=32)
-    inetd_id = models.CharField("INETD üye numarası", blank=True, null=True, max_length=32)
-    github_username = models.CharField("Github kullanıcı adı", max_length=64, blank=True, null=True)
-
-    def __unicode__(self):
-        return smart_unicode(self.user.username)
-
-    class Meta:
-        db_table = "user_profiles"
-        verbose_name = "Kullanıcı profili"
-        verbose_name_plural = "Kullanıcı profilleri"
-
-
-def create_user_profile(sender, instance, created, **kwargs):
-    if created:
-        UserProfile.objects.create(user=instance)
-
-post_save.connect(create_user_profile, sender=User)

@@ -3,6 +3,8 @@ from django.conf.urls import include, url
 from django.contrib import admin
 admin.autodiscover()
 
+from django.conf import settings
+
 urlpatterns = [
     url(r'^login/$', 'django.contrib.auth.views.login'),
     url(r'^logout/$', 'django.contrib.auth.views.logout_then_login'),
@@ -15,6 +17,13 @@ urlpatterns = [
     url(r'^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$',
         'django.contrib.auth.views.password_reset_confirm',
         {'template_name': 'registration/reset_form.html'}, name='password_reset_confirm'),
-    url(r'^', include('courses.urls', namespace='courses')),
+    url(r'^', include('events.urls', namespace='courses')),
+    url(r'^users/', include('profiles.urls', namespace='profiles')),
+    url(r'^courses/', include('courses.urls', namespace='courses')),
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    ]
