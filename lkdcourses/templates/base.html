@@ -12,7 +12,7 @@
     <a href="{% url 'django.contrib.auth.views.logout_then_login' %}">Çıkış</a>
 {% else %}
     <a href="{% url 'django.contrib.auth.views.login' %}">Giriş</a> |
-    <a href="{% url 'users:register' %}">Kayıt ol</a> |
+    <a href="{% url 'profiles:register' %}">Kayıt ol</a> |
     <a href="{% url 'password_reset' %}">Parola sıfırla</a>
 {% endif %}
 <hr>
