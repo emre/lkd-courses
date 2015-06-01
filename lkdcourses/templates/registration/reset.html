@@ -3,9 +3,15 @@
 {% block title %}Parola sıfırla{% endblock %}
 
 {% block content %}
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Parolamı sıfırla">
-    </form>
+  <h1>Parola sıfırla</h1>
+  <div class="flash">
+      Parolanızı sıfırlamanız için yapmanız gerekenleri e-posta adresinize göndereceğiz.
+  </div>
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-footer">
+      <button type="submit" class="btn btn-primary">Gönder</button>
+    </div>
+  </form>
 {% endblock %}

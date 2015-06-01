@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<h2>Etkinlikler</h2>
+<h1>Etkinlikler</h1>
 
 {% for event in object_list %}
 <h3>{{ event.name }} <a href="">Başvur</a></h3>
@@ -20,5 +20,9 @@
 </p>
 {% endfor %}
 <hr>
+{% empty %}
+<div class="flash">
+  Kayıtlı etkinlik bulunamadı.
+</div>
 {% endfor %}
 {% endblock %}

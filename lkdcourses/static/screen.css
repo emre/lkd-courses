@@ -1,0 +1,78 @@
+header {
+  background-color: #6cc644;  /* alternatif: #4183c4 */
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+}
+
+.logo {
+    color: #fff;
+    float: left;
+    margin: 0;
+    padding-top: .1rem;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav a:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.main-nav a {
+  font-size: 1rem;
+}
+
+header a {
+  color: #fff;
+}
+
+input {
+  width: 350px;
+}
+
+form {
+  margin-top: 25px;
+}
+
+form > p {
+  padding-bottom: 20px;
+}
+
+.errorlist {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.errorlist > li {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+p > label {
+  display: block;
+  font: normal 16px arial, sans;
+  padding: 10px 0;
+}
+
+label.required {
+  font-weight: bold;
+}
+
+.helptext {
+  color: #666;
+  margin-left: 25px;
+}
+
+form > .form-footer {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #c7d1c2;
+  margin-top: 25px;
+}
+
+footer a, footer p {
+  color: #6d736b;
+}

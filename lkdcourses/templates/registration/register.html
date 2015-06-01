@@ -3,9 +3,12 @@
 {% block title %}Kayıt ol{% endblock %}
 
 {% block content %}
-    <form action="{% url 'profiles:register' %}" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Kayıt ol">
-    </form>
+  <h1>Kayıt ol</h1>
+  <form action="{% url 'profiles:register' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-footer">
+      <button type="submit" class="btn btn-primary">Gönder</button>
+    </div>
+  </form>
 {% endblock %}

@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ STATIC_URL }}primer.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}screen.css">
 </head>
 <body>
-<a href="/">Ana sayfa</a> |
-{% if user.is_authenticated %}
-    {{ user.username }} |
-    <a href="{% url 'profiles:profile_edit' %}">Profilim</a> |
-    <a href="{% url 'django.contrib.auth.views.logout_then_login' %}">Çıkış</a>
-{% else %}
-    <a href="{% url 'django.contrib.auth.views.login' %}">Giriş</a> |
-    <a href="{% url 'profiles:register' %}">Kayıt ol</a> |
-    <a href="{% url 'password_reset' %}">Parola sıfırla</a>
-{% endif %}
-<hr>
-{% if messages %}
-    {% for message in messages %}
-    <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
-    {% endfor %}
-{% endif %}
-{% block content %}
-{% endblock %}
+  <header>
+    <div class="container">
+      <h3 class="logo"><a href="/">Kurs Yönetim Yazılımı</a></h3>
+      <nav class="main-nav">
+        {% if user.is_authenticated %}
+        <a href="{% url 'profiles:profile_edit' %}">Profilim</a>
+        <a href="{% url 'django.contrib.auth.views.logout_then_login' %}">Çıkış</a>
+        {% else %}
+        <a href="{% url 'django.contrib.auth.views.login' %}">Giriş yap</a>
+        <a href="{% url 'password_reset' %}">Parola sıfırla</a>
+        <a href="{% url 'profiles:register' %}">Kayıt ol</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  {% if user.is_authenticated %}
+  <div class="container tabnav">
+    <nav class="tabnav-tabs">
+      <a href="/" class="tabnav-tab selected">Ana sayfa</a>
+      <a href="{% url 'profiles:profile_edit' %}" class="tabnav-tab">Profilim</a>
+    </nav>
+  </div>
+  {% endif %}
+
+  <div class="container">
+    {% if messages %}
+    <div class="flash-messages">
+      {% for message in messages %}
+      <div class="flash"{% if message.tags %} class="flash-{{ message.tags }}"{% endif %}>
+        {{ message }} {{ message.tags }}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="content">
+    {% block content %}
+    {% endblock %}
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+        <p>Bir Linux Kullanıcıları Derneği projesidir. <a href="https://github.com/emre/lkd-courses">GitHub</a></p>
+    </div>
+  </footer>
 </body>
 </html>

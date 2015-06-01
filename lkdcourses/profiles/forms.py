@@ -7,6 +7,8 @@ from django.contrib.auth.forms import UserCreationForm as AuthModuleUserCreation
 
 class UserCreationForm(AuthModuleUserCreationForm):
 
+    required_css_class = 'required'
+
     class Meta:
         model = UserProfile
         fields = ("username",)

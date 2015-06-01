@@ -2,25 +2,21 @@
 
 {% block content %}
 
+<h1>Giriş yap</h1>
+
 {% if form.errors %}
-<p>Kullanıcı adınız veya parolanız geçersiz. Lütfen tekrar deneyin.</p>
+<div class="flash flash-error">
+  Kullanıcı adınız veya parolanız geçersiz. Lütfen tekrar deneyin.
+</div>
 {% endif %}
 
 <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
-{% csrf_token %}
-<table>
-<tr>
-    <td>Kullanıcı adı:</td>
-    <td>{{ form.username }}</td>
-</tr>
-<tr>
-    <td>Parola:</td>
-    <td>{{ form.password }}</td>
-</tr>
-</table>
+  {% csrf_token %}
+  <input type="hidden" name="next" value="{{ next }}">
+  {{ form.as_p }}
 
-<input type="submit" value="Giriş yap">
-<input type="hidden" name="next" value="{{ next }}">
+  <div class="form-footer">
+    <button type="submit" class="btn btn-primary">Gönder</button>
+  </div>
 </form>
-
 {% endblock %}

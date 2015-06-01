@@ -3,9 +3,11 @@
 {% block title %}Profilim{% endblock %}
 
 {% block content %}
-    <form action="{% url 'profiles:profile_edit' %}" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Düzenle">
-    </form>
+  <form action="{% url 'profiles:profile_edit' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-footer">
+      <button type="submit" class="btn btn-primary">Gönder</button>
+    </div>
+  </form>
 {% endblock %}
