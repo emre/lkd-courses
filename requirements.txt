@@ -1,4 +1,4 @@
-django==1.8.1
+django==1.8
 db-sqlite3
 south
 pillow
