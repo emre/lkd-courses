@@ -1,8 +1,8 @@
-# coding: utf-8
-
-from .models import Event
+from __future__ import unicode_literals
 
 from django.views.generic.list import ListView
+
+from .models import Event
 
 
 class IndexView(ListView):

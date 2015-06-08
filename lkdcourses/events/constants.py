@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
 
 SPONSOR_TYPE_PLATINUM = 1
 SPONSOR_TYPE_GOLD = 2

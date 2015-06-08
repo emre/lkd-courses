@@ -1,6 +1,8 @@
+from __future__ import unicode_literals
+
 from django.contrib import admin
 
-from .models import (UserProfile, AdministrativeNote)
+from .models import UserProfile, AdministrativeNote
 
 
 class AdministrativeNoteAdmin(admin.ModelAdmin):

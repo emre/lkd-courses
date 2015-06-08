@@ -1,12 +1,16 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
+
 from django.db import models
-from django.utils.encoding import smart_unicode
+from django.utils.encoding import smart_text, python_2_unicode_compatible
 from django.contrib.auth import models as auth_models
 from django.utils import timezone
 
 from .constants import *
 
+
+@python_2_unicode_compatible
 class UserProfile(auth_models.AbstractUser):
     address = models.TextField("Adres", blank=True, null=True)
     phone = models.CharField("Telefon numarası", max_length=20, blank=True, null=True)
@@ -25,14 +29,15 @@ class UserProfile(auth_models.AbstractUser):
     inetd_id = models.CharField("INETD üye numarası", blank=True, null=True, max_length=32)
     github_username = models.CharField("Github kullanıcı adı", max_length=64, blank=True, null=True)
 
-    def __unicode__(self):
-        return smart_unicode(self.username)
+    def __str__(self):
+        return smart_text(self.username)
 
     class Meta:
         verbose_name = "Kullanıcı profili"
         verbose_name_plural = "Kullanıcı profilleri"
 
 
+@python_2_unicode_compatible
 class AdministrativeNote(models.Model):
     user = models.ForeignKey(UserProfile, related_name="notted_user")
     adder = models.ForeignKey(UserProfile, related_name="adder")
@@ -40,8 +45,8 @@ class AdministrativeNote(models.Model):
     note_type = models.IntegerField(choices=ADMINISTRATIVE_NOTE_TYPES, blank=True, null=True, db_index=True)
     created_at = models.DateTimeField(default=timezone.now)
 
-    def __unicode__(self):
-        return smart_unicode("{0} #{1}".format(self.get_full_name(), self.id))
+    def __str__(self):
+        return smart_text("{} #{}".format(self.get_full_name(), self.id))
 
     class Meta:
         db_table = "administrative_notes"

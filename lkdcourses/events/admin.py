@@ -1,6 +1,8 @@
+from __future__ import unicode_literals
+
 from django.contrib import admin
 
-from .models import (Venue, Event, Sponsor)
+from .models import Venue, Event, Sponsor
 
 
 class SponsorAdmin(admin.ModelAdmin):

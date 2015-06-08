@@ -15,3 +15,10 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 $ python manage.py runserver
 ```
+
+### Docker
+
+```sh
+docker build -t lkd:courses .
+docker run -it -p 8000 lkd:courses
+```

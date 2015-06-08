@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
 
+from django.contrib import messages
 from django.core.urlresolvers import reverse_lazy
+from django.views.generic.edit import CreateView, UpdateView
 
 from .models import UserProfile
 from .mixins import LoginRequiredMixin
 from .forms import (UserForm, UserCreationForm)
-
-from django.contrib import messages
-from django.views.generic.edit import CreateView, UpdateView
 
 
 class UserProfileUpdate(LoginRequiredMixin, UpdateView):

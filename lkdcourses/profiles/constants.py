@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 
 ADMINISTRATIVE_NOTE_GRAY = 1
 ADMINISTRATIVE_NOTE_BLACK = 2

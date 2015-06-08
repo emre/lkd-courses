@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
+
 from django.db import models
-from django.utils.encoding import smart_unicode
+from django.utils.encoding import smart_text, python_2_unicode_compatible
 
 
+@python_2_unicode_compatible
 class Instructor(models.Model):
     fullname = models.CharField("ad soyad", max_length=255)
     avatar = models.ImageField(upload_to="instructor_avatars", blank=True, null=True)
     about_text = models.TextField("Eğitmen hakkında", null=True, blank=True)
 
-    def __unicode__(self):
-        return smart_unicode(self.fullname)
+    def __str__(self):
+        return smart_text(self.fullname)
 
     class Meta:
         db_table = "instructors"
@@ -18,6 +21,7 @@ class Instructor(models.Model):
         verbose_name_plural = "Eğitmenler"
 
 
+@python_2_unicode_compatible
 class Course(models.Model):
     event = models.ForeignKey("events.Event")
     name = models.CharField("Kurs ismi", max_length=255)
@@ -37,8 +41,8 @@ class Course(models.Model):
     deadline_date = models.DateField("Son başvuru ekleme/düzenleme tarihi")
     quota = models.IntegerField("Katılımcı kotası", blank=True, null=True)
 
-    def __unicode__(self):
-        return smart_unicode(self.name)
+    def __str__(self):
+        return smart_text(self.name)
 
     class Meta:
         db_table = "courses"
@@ -46,6 +50,7 @@ class Course(models.Model):
         verbose_name_plural = "Kurslar"
 
 
+@python_2_unicode_compatible
 class UserChoice(models.Model):
     """
     One user may apply more than one courses with priority. If they didn't get acception from the course instructors,
@@ -57,8 +62,8 @@ class UserChoice(models.Model):
     course = models.ForeignKey(Course)
     priority = models.IntegerField("Öncelik")  # [1-N]
 
-    def __unicode__(self):
-        return smart_unicode("{0} - {1} - {2}".format(self.event, self.event, self.priority))
+    def __str__(self):
+        return smart_text("{} - {} - {}".format(self.event, self.event, self.priority))
 
     class Meta:
         db_table = 'user_choices'
@@ -66,6 +71,7 @@ class UserChoice(models.Model):
         verbose_name_plural = 'kullanıcı kurs seçimleri'
 
 
+@python_2_unicode_compatible
 class Application(models.Model):
     user = models.ForeignKey("profiles.UserProfile", related_name="application_user")
     event = models.ForeignKey("events.Event")
@@ -78,8 +84,8 @@ class Application(models.Model):
     need_accommodation = models.BooleanField("Konaklama ihtiyacı", default=0)
     notes = models.TextField("Notlar", blank=True, null=True)
 
-    def __unicode__(self):
-        return smart_unicode("{0} - {1}".format(self.user, self.event))
+    def __str__(self):
+        return smart_text("{} - {}".format(self.user, self.event))
 
     class Meta:
         db_table = "applications"

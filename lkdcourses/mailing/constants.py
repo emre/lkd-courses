@@ -1,4 +1,6 @@
+# coding: utf-8
 
+from __future__ import unicode_literals
 
 APPROVE_APPLICATION_EMAIL_TEMPLATE = "course-approved"
 REJECT_APPLICATION_EMAIL_TEMPLATE = "course-rejected"

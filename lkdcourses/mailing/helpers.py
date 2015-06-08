@@ -1,4 +1,4 @@
-
+from __future__ import unicode_literals
 
 from django.core.mail import EmailMessage
 from django.conf import settings
@@ -62,8 +62,4 @@ def send_email_from_template(to_profile, template_name, global_merge_vars=None, 
 
 
 def mail_is_sent_before(to_profile, template_name):
-
-    if MailLog.objects.filter(to=to_profile, type=template_name).count() > 0:
-        return True
-
-    return False
+    return MailLog.objects.filter(to=to_profile, type=template_name).count() > 0

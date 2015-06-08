@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+from __future__ import print_function
+
 from django.core.management.base import BaseCommand, CommandError
 
 from courses.models import Instructor
@@ -49,4 +51,4 @@ class Command(BaseCommand):
                 instructor = Instructor(fullname=instructor_name)
                 instructor.save()
 
-        print "shields up, weapons online."
+        print("shields up, weapons online.")
